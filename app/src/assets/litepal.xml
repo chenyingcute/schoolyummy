@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="school_yummy" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.schoolyummy.android.db.User" />
+        <mapping class="com.schoolyummy.android.db.Place" />
+        <mapping class="com.schoolyummy.android.db.Comment" />
+    </list>
+
+</litepal>
