@@ -1,6 +1,7 @@
 package com.schoolyummy.android.db;
 
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 import java.util.Date;
 
@@ -8,7 +9,7 @@ import java.util.Date;
  * Created by DSHH on 2020/5/22.
  */
 
-public class Place {
+public class Place extends LitePalSupport{
     private int id;
 
     private String placeName;

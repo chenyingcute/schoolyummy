@@ -1,12 +1,13 @@
 package com.schoolyummy.android.db;
 
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 /**
  * Created by DSHH on 2020/5/22.
  */
 
-public class User {
+public class User extends LitePalSupport{
     private int id;
 
     private String userName;
@@ -18,9 +19,7 @@ public class User {
     public int getId (){
         return  id;
     }
-    public void setId(int id){
-        this.id=id;
-    }
+    public void setId(int id) { this.id=id; }
 
     public String getUserName() {
         return userName;

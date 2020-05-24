@@ -1,6 +1,7 @@
 package com.schoolyummy.android.db;
 
 import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
 import java.util.Date;
 
@@ -8,14 +9,15 @@ import java.util.Date;
  * Created by DSHH on 2020/5/22.
  */
 
-public class Comment {
+public class Comment extends LitePalSupport{
     private int id;
-    private String userName;
-    private String placeName;
+    private User userName;
+    private Place placeName;
     private Date comTime;
     private int score;
     private int price;
     private String comment;
+    private byte[] image;
 
 
     public int getId() {
@@ -24,6 +26,21 @@ public class Comment {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public User getUserName() {
+        return userName;
+    }
+
+    public void setUserName(User userName) {
+        this.userName = userName;
+    }
+    public Place getPlaceName() {
+        return placeName;
+    }
+
+    public void setPlaceName(Place placeName) {
+        this.placeName = placeName;
     }
 
     public int getScore() {
@@ -42,21 +59,9 @@ public class Comment {
     public void setPrice(int price) {
         this.price = price;
     }
-    public String getUserName() {
-        return userName;
-    }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
-    public String getPlaceName() {
-        return placeName;
-    }
 
-    public void setPlaceName(String placeName) {
-        this.placeName = placeName;
-    }
 
     public Date getComTime() {
         return comTime;
@@ -74,6 +79,13 @@ public class Comment {
         this.comment = comment;
     }
 
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
 
 
 }
