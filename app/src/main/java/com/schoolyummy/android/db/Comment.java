@@ -17,7 +17,7 @@ public class Comment extends LitePalSupport{
     private int score;
     private int price;
     private String comment;
-    private byte[] image;
+    private byte[] commImage;
 
 
     public int getId() {
@@ -79,12 +79,12 @@ public class Comment extends LitePalSupport{
         this.comment = comment;
     }
 
-    public byte[] getImage() {
-        return image;
+    public byte[] getCommImage() {
+        return commImage;
     }
 
-    public void setImage(byte[] image) {
-        this.image = image;
+    public void setCommImage(byte[] commImage) {
+        this.commImage = commImage;
     }
 
 

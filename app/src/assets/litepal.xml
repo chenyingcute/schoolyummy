@@ -3,7 +3,7 @@
 
     <dbname value="school_yummy" />
 
-    <version value="2" />
+    <version value="3" />
 
     <list>
         <mapping class="com.schoolyummy.android.db.User" />

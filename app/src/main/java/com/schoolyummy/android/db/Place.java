@@ -16,6 +16,8 @@ public class Place extends LitePalSupport{
 
     private String placeAddr;
 
+    private byte[] placeImage;
+
     private int placeCongestion;
 
     public String getPlaceName() {
@@ -43,6 +45,13 @@ public class Place extends LitePalSupport{
         this.placeAddr = placeAddr;
     }
 
+    public byte[] getPlaceImage() {
+        return placeImage;
+    }
+
+    public void setPlaceImage(byte[] placeImage) {
+        this.placeImage = placeImage;
+    }
 
     public int getPlaceCongestion() {
         return placeCongestion;
